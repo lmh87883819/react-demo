@@ -1,11 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { Button } from 'antd'
+import style from './App.styl';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={style.aoo}>
+      123
+      <Button type="primary">12312</Button>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +21,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
