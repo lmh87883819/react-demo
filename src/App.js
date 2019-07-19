@@ -7,8 +7,8 @@ import App from './pages'
 
 const { persistor, store } = configureStore()
 const onBeforeLift = () => {
-	// take some action before the gate lifts
 }
+
 class Index extends React.Component {
   
 	render () {
