@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'antd';
 import { connect } from 'react-redux'
+import Immutable from 'immutable'
 
 import { testAction } from '../actions/testAction'
 import Http from '../api'
@@ -8,7 +9,7 @@ import styles from './index.styl'
 
 class Index extends Component {
     state = {
-        list: [],
+        list: Immutable.List(),
     }
 
     componentDidMount () {
@@ -18,12 +19,12 @@ class Index extends Component {
     updateList = async () => {
         const res = await Http.get('', {amount: 3})
         this.setState({
-            list: res
+            list: Immutable.fromJS(res)
         })
     }
 
     render () {
-        const { list } = this.state
+        const list = this.state.list.toJS()
         return (
             <div className={styles.root}>
                 <h1>共点击了 {this.props.testReducer.data} 次</h1>
