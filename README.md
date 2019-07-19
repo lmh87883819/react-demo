@@ -11,3 +11,5 @@
 ##集成axios，添加配置文件
 
 ##例子使用immutable
+
+##集成redux-persist，完成redux数据的持久化
