@@ -14,4 +14,4 @@
 
 ### 集成redux-persist，完成redux数据的持久化
 
-### 集成react-router-dom,hashRouter版本,提供给Electron项目使用
+### 集成react-router-dom,browserRouter版本
